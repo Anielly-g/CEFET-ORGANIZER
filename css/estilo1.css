@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+#topo {
+    height: 250px;
+    background-color: dodgerblue;
+}
+
+#topo h2 {
+    padding-top: 60px;
+    color: white;
+    text-align: center;
+
+}
+
+#topo div {
+    text-align: right;
+    padding-right: 20px;
+}
+
+#topo div a {
+    cursor: pointer;
+    color: white;
+}
+
+#menu ul {
+    background-color: rgb(36, 73, 141);
+}
+
+#menu ul li {
+    display: inline-table;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 27px;
+}
+
+#menu ul li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#conteudo {
+    background-color: gray;
+    min-height: 607px;
+
+}
