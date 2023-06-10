@@ -22,7 +22,7 @@ Por enquanto não há funcionalidade de login, mas só será possível passar pa
 
 ![página do Adm](img/img5.jpeg)
 
-Nessa página inicial primeiro iremos no adicionar curso e cadastraremos 3 cursos (Engenharia da Computação, Engenharia Mecatrônica, Design de Moda) visto que iremos excluir um para mostrar a funcionalidade e porque também nossa caixa de seleção ainda não consegue selecionar apenas um item tendo só um item (estamos trabalhando para que isso seja resolvido). Além que se você quiser selecionar o primeiro item, deverá selecionar o segundo e depois o primeiro em todas as seções para que ele funcione corretamente, se não dará erro.
+Nessa página inicial primeiro iremos no adicionar curso e cadastraremos 3 cursos (Engenharia da Computação, Engenharia Mecatrônica, Design de Moda) visto que iremos excluir um para mostrar a funcionalidade e porque também nossa caixa de seleção ainda não consegue selecionar apenas um item tendo só um item (estamos trabalhando para que isso seja resolvido). Além que se você quiser selecionar o primeiro item, deverá selecionar o segundo e depois o primeiro em todas as seções para que ele funcione corretamente em todos os métodos, se não dará erro.
 
 ![adicionar curso do Adm](img/img6.jpeg)
 
