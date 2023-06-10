@@ -2,7 +2,7 @@
 Projeto desenvolvido pelos alunos Anielly, Eduardo G , Eduardo R , Mateus e Rafael na disciplina de Modelagem e Desenvolvimento de Software no 5° perído de Engenharia da Computação no CEFET-MG.
 
 ## Passo a Passo da Utilização do Software
-O sistema foi desenvolvido na paltaforma do Visual Studio Code (VSCode). Nela foram baixadas 3 extensões : HTML CSS Support, JavaScript (ES6) code snippets e Live Server. Essas são essenciais para o funcionamento do CEFET-ORGANIZER. 
+O sistema foi desenvolvido na plataforma do Visual Studio Code (VSCode). Nela foram baixadas 3 extensões : HTML CSS Support, JavaScript (ES6) code snippets e Live Server. Essas são essenciais para o funcionamento do CEFET-ORGANIZER. 
 
 ![Extensões](img/img1.jpeg)
 
