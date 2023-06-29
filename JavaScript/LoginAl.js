@@ -19,19 +19,15 @@ function fazerLogin() {
 
     var listaDeAlunos = obterListaDeAlunos();
 
-
     // Verifica se há um aluno com o email e senha fornecidos
     var alunoEncontrado = listaDeAlunos.find(function(aluno) {
         return aluno.email === email && aluno.senha === senha;
     });
 
-    
-
     if (alunoEncontrado) {
         
         window.location.href = "aluno.html?aluno=" + encodeURIComponent(JSON.stringify(alunoEncontrado));
       
-
     } else {
         alert("Email ou senha incorretos.");
     }

@@ -10,7 +10,7 @@ console.log(aluno);
 
 
 // Armazena o objeto aluno no Local Storage
-localStorage.setItem('aluno', JSON.stringify(aluno));
+if (localStorage.getItem('aluno', JSON.stringify(aluno)) === null) localStorage.setItem('aluno', JSON.stringify(aluno));
 
 // Função para salvar o objeto aluno no Local Storage
 function salvarAluno() {
