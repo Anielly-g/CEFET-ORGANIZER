@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo3.css">
+    <title>Página do Aluno</title>
+</head>
+
+<body>
+    <header id="topo">
+        <h2> Seja bem-vindo a página do aluno!</h2>
+    </header>
+
+    <div class="navbar">
+        <h1>CEFET-MG Organizer</h1>
+        <ul>
+            <li><a href="horasC.html?aluno=${encodeURIComponent(JSON.stringify(aluno))}">Adicionar Hora Complementar Feita</a></li>
+            <li><a href="excluirC.html?aluno=${encodeURIComponent(JSON.stringify(aluno))}">Excluir Hora Complementar Feita</a></li>
+            <li><a href="verC.html?aluno=${encodeURIComponent(JSON.stringify(aluno))}">Ver Horas Complementares Feita</a></li>
+            <li><a href="index.html?aluno=${encodeURIComponent(JSON.stringify(aluno))}">Sair</a></li>
+        </ul>
+    </div>
+
+    <section id="conteudo"></section>
+
+</body>
+<script src="/JavaScript/aluno.js"></script>
+
+</html>

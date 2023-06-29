@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo3.css">
+    <link rel="stylesheet" href="css/estilo4.css">
+    <title>Editar Curso</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>CEFET-MG Organizer</h1>
+        <ul>
+            <li><a href="addcurso.html">Adicionar Curso</a></li>
+            <li><a href="alterar.html">Alterar Informações do Curso</a></li>
+            <li><a href="addCat.html">Adicionar Categoria do Curso</a></li>
+            <li><a href="alterarCat.html">Alterar Categoria do Curso</a></li>
+            <li><a href="excluirCat.html">Excluir Categoria do Curso</a></li>
+            <li><a href="excluir.html">Excluir Curso</a></li>
+            <li><a href="adm.html">Voltar</a></li>
+        </ul>
+    </div>
+
+    <form class="form-container">
+        <h1>Editar Curso</h1>
+
+        <div class="form-group">
+            <label for="select-curso">Selecione um curso:</label>
+            <select id="select-curso" onchange="selecionarCurso()">
+                <option value="">Selecione</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="horas-antigas">Horas Antigas:</label>
+            <input type="text" id="horas-antigas" disabled>
+        </div>
+
+        <div class="form-group">
+            <label for="novas-horas">Novas Horas:</label>
+            <input type="text" id="novas-horas">
+        </div>
+        <input type="button" value="Alterar" onclick="alterarHoras()">
+    </form>
+
+    <script src="JavaScript/editar.js"></script>
+</body>
+
+</html>

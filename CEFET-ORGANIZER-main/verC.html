@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo3.css">
+    <link rel="stylesheet" href="css/estilo4.css">
+    <title>Grafico de Pizza</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.27.1/dist/apexcharts.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>CEFET-MG Organizer</h1>
+        <ul>
+            <li><a href="horasC.html?aluno=${encodeURIComponent(JSON.stringify(aluno))}">Adicionar Hora Complementar Feita</a></li>
+            <li><a href="excluirC.html?aluno=${encodeURIComponent(JSON.stringify(aluno))}">Excluir Hora Complementar Feita</a></li>
+            <li><a href="verC.html?aluno=${encodeURIComponent(JSON.stringify(aluno))}">Ver Horas Complementares Feita</a></li>
+            <li><a href="aluno.html?aluno=${encodeURIComponent(JSON.stringify(aluno))}">Voltar</a></li>
+        </ul>
+    </div>
+
+    <form class="form-container">
+        <h1>Ver Horas Complementar</h1>
+
+        <div id="grafico-pizza"></div>
+        <select id="select-curso" onchange="selecionarCurso()"></select>
+
+        <script src="JavaScript/verC.js"></script>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+body {
+    background-color: #4e5762a9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 60px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #4e5762;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    color: black;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    background-color: #f5f5f5;
+    color: #4e5762;
+    margin-bottom: 15px;
+  }
+  
+  input[type="button"],
+  a {
+    background-color: #4e5762;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  input[type="button"]:hover,
+  a:hover {
+    background-color: #404855;
+  }
+  
+  a {
+    display: block;
+    margin-top: 15px;
+    color: #4e5762;
+    text-decoration: none;
+  }
+
+  
+  .btn-enviar {
+    background-color: #4e5762;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 130px; 
+    margin-top: 60px;
+    position: absolute;
+    left: 45%;
+    
+  }
+
+  .btn-login {
+    background-color: #4e5762;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 10px;
+    text-decoration: none;
+    
+    width: 90px;
+    margin-top: 6px;
+    position: absolute;
+    left: 37%;
+
+  }
+
+  .btn-voltar {
+    background-color: #4e5762;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 10px;
+    text-decoration: none;
+    
+    width: 90px; 
+    margin-top: 6px;
+    position: absolute;
+    left: 55%;
+
+  }
