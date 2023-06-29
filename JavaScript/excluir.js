@@ -8,6 +8,25 @@ function obterListaDeDados() {
     }
 }
 
+
+
+function obterListaDeAlunos() {
+    var listaJSON = localStorage.getItem("listaDeAlunos");
+    if (listaJSON) {
+      return JSON.parse(listaJSON);
+    } else {
+      return [];
+    }
+}
+
+
+  
+  // Função para salvar a lista de alunos no armazenamento local
+function salvarListaDeAlunos(lista) {
+    var listaJSON = JSON.stringify(lista);
+    localStorage.setItem("listaDeAlunos", listaJSON);
+}
+
 // Função para salvar a lista de dados no armazenamento local
 function salvarListaDeDados(lista) {
     var listaJSON = JSON.stringify(lista);
@@ -33,30 +52,54 @@ function popularListaDeCursos() {
 }
 
 // Função para excluir um curso selecionado
+
+// Função para excluir um curso selecionado
+// Função para excluir um curso selecionado
 function excluirCurso() {
-    var selectElement = document.getElementById("select-curso");
-    var cursoIndex = selectElement.value;
-    
-    if (cursoIndex !== "") {
-        // Obter a lista de dados do armazenamento local
-        var listaDeDados = obterListaDeDados();
-        
-        // Remover o curso selecionado da lista
-        listaDeDados.splice(cursoIndex, 1);
-        
-        // Salvar a lista atualizada no armazenamento local
-        salvarListaDeDados(listaDeDados);
-        
-        // Atualizar a lista de seleção de cursos
-        popularListaDeCursos();
-        
-        // Exibir uma mensagem de sucesso
-        alert("Curso excluído com sucesso!");
-    } else {
-        // Exibir uma mensagem de erro se nenhum curso for selecionado
-        alert("Selecione um curso para excluí-lo.");
+  var selectElement = document.getElementById("select-curso");
+  var cursoIndex = selectElement.value;
+
+  if (cursoIndex !== "") {
+    // Obter a lista de dados do armazenamento local
+    var listaDeDados = obterListaDeDados();
+
+    // Obter o curso selecionado
+    var cursoSelecionado = listaDeDados[cursoIndex].nome;
+
+    // Remover o curso selecionado da lista
+    listaDeDados.splice(cursoIndex, 1);
+
+    // Obter a lista de alunos do armazenamento local
+    var listaDeAlunos = obterListaDeAlunos();
+
+    // Percorrer a lista de alunos e remover os alunos associados ao curso selecionado
+    for (var i = listaDeAlunos.length - 1; i >= 0; i--) {
+      var aluno = listaDeAlunos[i];
+      if (aluno.curso && aluno.curso.nome === cursoSelecionado) {
+        listaDeAlunos.splice(i, 1);
+      }
     }
+
+    // Salvar as listas atualizadas no armazenamento local
+    salvarListaDeDados(listaDeDados);
+    salvarListaDeAlunos(listaDeAlunos);
+
+    // Atualizar a lista de seleção de cursos
+    popularListaDeCursos();
+
+    console.log(listaDeAlunos);
+
+    // Exibir uma mensagem de sucesso
+    alert("Curso excluído e alunos associados removidos com sucesso!");
+  } else {
+    // Exibir uma mensagem de erro se nenhum curso for selecionado
+    alert("Selecione um curso para excluí-lo.");
+  }
 }
+
+
+
+
 
 // Carrega os cursos salvos (se existirem) ao carregar a página
 window.addEventListener("load", function() {

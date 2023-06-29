@@ -17,15 +17,16 @@
     <div class="navbar">
         <h1>CEFET-MG Organizer</h1>
         <ul>
-            <li><a href="horasC.html">Adicionar Hora Complementar Feita</a></li>
-            <li><a href="excluirC.html">Excluir Hora Complementar Feita</a></li>
-            <li><a href="verC.html">Ver Horas Complementares Feita</a></li>
-            <li><a href="index.html">Sair</a></li>
+            <li><a href="horasC.html?aluno=${encodeURIComponent(JSON.stringify(aluno))}">Adicionar Hora Complementar Feita</a></li>
+            <li><a href="excluirC.html?aluno=${encodeURIComponent(JSON.stringify(aluno))}">Excluir Hora Complementar Feita</a></li>
+            <li><a href="verC.html?aluno=${encodeURIComponent(JSON.stringify(aluno))}">Ver Horas Complementares Feita</a></li>
+            <li><a href="index.html?aluno=${encodeURIComponent(JSON.stringify(aluno))}">Sair</a></li>
         </ul>
     </div>
 
     <section id="conteudo"></section>
 
 </body>
+<script src="/JavaScript/aluno.js"></script>
 
 </html>
