@@ -40,14 +40,14 @@ body {
     color: #4e5762;
   }
   
-  .form-group input[type="submit"] {
+  .form-group input[type="button"] {
     background-color: #4e5762;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
-  .form-group input[type="submit"]:hover {
+  .form-group input[type="button"]:hover {
     background-color: #404855;
   }
   

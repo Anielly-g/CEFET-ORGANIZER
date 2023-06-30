@@ -5,6 +5,12 @@ function popularListaDeCursos() {
   
     // Obter a lista de dados do armazenamento local
     var listaDeDados = obterListaDeDados();
+    var option2 = document.createElement("option");
+    option2.textContent = "Selecione o curso";
+    option2.selected="selected";
+    option2.setAttribute('disabled','');
+    selectElement.appendChild(option2);
+
   
     // Iterar sobre a lista de cursos e criar opções para cada curso
     for (var i = 0; i < listaDeDados.length; i++) {

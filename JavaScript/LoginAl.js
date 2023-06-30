@@ -24,6 +24,9 @@ function fazerLogin() {
         return aluno.email === email && aluno.senha === senha;
     });
 
+    console.log(alunoEncontrado);
+
+
     if (alunoEncontrado) {
         
         window.location.href = "aluno.html?aluno=" + encodeURIComponent(JSON.stringify(alunoEncontrado));

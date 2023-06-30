@@ -6,6 +6,12 @@ function popularListaDeCursos() {
   // Obter a lista de dados do armazenamento local
   var listaDeDados = obterListaDeDados();
 
+  var option2 = document.createElement("option");
+  option2.textContent = "Selecione o curso";
+  option2.selected="selected";
+  option2.setAttribute('disabled','');
+  selectElement.appendChild(option2);
+
   // Iterar sobre a lista de cursos e criar opções para cada curso
   for (var i = 0; i < listaDeDados.length; i++) {
     var curso = listaDeDados[i];
@@ -38,6 +44,12 @@ function selecionarCurso() {
 
     // Limpar as opções de categorias
     selectCategoriaElement.innerHTML = "";
+
+    var option2 = document.createElement("option");
+    option2.textContent = "Selecione a categoria";
+    option2.disabled = true;
+    option2.selected = true;
+    selectCategoriaElement.appendChild(option2);
 
     // Iterar sobre as categorias do curso e criar opções para cada categoria
     if (curso.hasOwnProperty('categorias')) {

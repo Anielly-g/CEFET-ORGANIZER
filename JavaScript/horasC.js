@@ -2,6 +2,8 @@
 const alunoString = localStorage.getItem('aluno');
 const aluno = alunoString ? JSON.parse(alunoString) : null;
 
+console.log(alunoString);
+
 // Função para popular a lista de seleção de cursos
 function popularListaDeCursos() {
   var selectElement = document.getElementById("select-curso");

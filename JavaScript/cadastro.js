@@ -95,9 +95,11 @@ function enviarFormulario() {
 
     salvarListaDeAlunos(listaDeAlunos);
 
+    alert("Cadastro realizado com sucesso!");
+
     document.getElementById("cadastroForm").reset();
 
-    alert("Cadastro realizado com sucesso!");
+   
 
     console.log(listaDeAlunos);
 }
