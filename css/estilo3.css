@@ -1,11 +1,11 @@
 body {
-    background-color: #4e5762a9;
+    background-color: #b2b1ffa9;
     margin: 0;
     padding: 0;
 }
 
 header {
-    color: white;
+    color: #0a0654b8;
     text-align: center;
     padding-left: 100px;
     padding-top: 50px;
@@ -13,7 +13,7 @@ header {
 }
 
 .navbar {
-    background-color: #030303;
+    background-color: #001d4a;
     position: fixed;
     top: 0;
     left: 0;
@@ -51,6 +51,6 @@ header {
 }
 
 .navbar a:hover {
-    background-color: #433d35;
+    background-color: #036a65;
     border-left-color: #fff;
 }

@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #4e5762a9;
+    background-color: #b2b1ffa9;
     font-family: Arial, sans-serif;
 }
 
@@ -46,7 +46,7 @@ input[type="text"] {
 }
 
 .btn-enviar {
-    background-color: #d45507;
+    background-color: #002c74;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -56,5 +56,5 @@ input[type="text"] {
 }
 
 .btn-enviar:hover {
-    background-color: #c23e05;
+    background-color: #036a65;
 }

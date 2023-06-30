@@ -1,5 +1,5 @@
 body {
-    background-color: #4e5762a9;
+    background-color: #b2b1ffa9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +12,7 @@ body {
   }
   
   .button {
-    background-color: #030303;
+    background-color: #002c74;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -21,6 +21,6 @@ body {
   }
   
   .button:hover {
-    background-color: #433d35;
+    background-color: #036a65;
   }
   
