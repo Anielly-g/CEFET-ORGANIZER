@@ -15,7 +15,6 @@ const alunoExistente = localStorage.getItem('aluno');
 if (alunoExistente) {
   // Se já existe um objeto aluno no Local Storage, usa o valor existente
   const alunoArmazenado = JSON.parse(alunoExistente);
-  Object.assign(alunoArmazenado, aluno); // Combina os dados do novo aluno com o aluno existente (opcional)
   localStorage.setItem('aluno', JSON.stringify(alunoArmazenado));
 } else {
   // Se não existe um objeto aluno no Local Storage, armazena o novo valor
